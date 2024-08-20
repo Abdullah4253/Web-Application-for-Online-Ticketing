@@ -1,0 +1,28 @@
+.T_main_div{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: auto;
+    background-color: rgb(243, 243, 243);
+    text-align: left;
+    margin-top: 3%;
+}
+.hh{
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.pp{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.T_item_div{
+    display: flex;
+}
+.ii{
+    height: 65px;
+}
+.item_div{
+    width: 33%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
