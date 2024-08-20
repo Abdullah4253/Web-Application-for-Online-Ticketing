@@ -1,0 +1,211 @@
+
+
+<html>
+    <head>
+        <title>Profile</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+        <link rel="stylesheet" href="css_files/Header_footer.css">
+        <link rel="stylesheet" href="css_files/profile.css">
+        <style>
+             ::placeholder {
+                color: black ;
+    font-size: 18px;
+    font-style: italic;
+    }
+    input{
+        color: black;
+    }
+    .nav_txt{
+font-size: 105%;
+color: darkblue;
+}
+.div_nav_txt{
+    width: 135%;
+}
+        </style>
+    </head>
+ 
+    <body style="background-image: url('pics/slidepic6-01.jpg'); color: white;">
+         <!--Header-->
+         <marquee>We are operationally ongoing. Taking every possible precaution is our top priority. So worry less and travel more with SAZ Transport Company!</marquee>
+
+<div class="navbar">
+    <nav class="nav">
+        <div class="innernavbar">
+            <div class="img">
+                <img src="pics/logo2-01.png" alt="logo" width="150%">
+            </div>
+                <div class="div_nav_txt">
+                   
+                    <a  class="nav_txt" href="index.html">HOME</a>
+                    <a  class="nav_txt" href="About_us.html"> ABOUT </a>
+                    <a  class="nav_txt" href="Travel_experience.html"> TRAVEL EXPERIENCE </a>
+                    <a  class="nav_txt" href="Contact_us.html">  CONTACT US</a>
+                    <a  class="nav_txt" href="Career.html">CAREERS</a>
+                    <div class="dropdown">
+                        <a  onclick="myFunction()" class="dropbtn">ACCOUNT</a>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="login_page.html">SIGNIN</a>
+                          <a href="Profile.html">Profile</a>
+                          <a href="admin/admin_table.html">Admin</a>
+                          <a href="logout.html">SIGNOUT</a>
+                        </div>
+                      </div>
+                      
+                      <script>
+                      /* When the user clicks on the button, 
+                      toggle between hiding and showing the dropdown content */
+                      function myFunction() {
+                        document.getElementById("myDropdown").classList.toggle("show");
+                      }
+                      
+                      // Close the dropdown if the user clicks outside of it
+                      window.onclick = function(event) {
+                        if (!event.target.matches('.dropbtn')) {
+                          var dropdowns = document.getElementsByClassName("dropdown-content");
+                          var i;
+                          for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                              openDropdown.classList.remove('show');
+                            }
+                          }
+                        }
+                      }
+                      </script>
+                </div>
+        </div>
+    </nav>
+   </div>
+
+         
+     
+     <!--main page code-->
+<div class="p_main" style="display: flex;">
+    <div class="txt_side">
+         
+
+    </div>
+<div class="form_side">
+    <div style="width: 95%; margin-left: 2.5%; margin-right: 2.5%; text-align: left;"><h2> Profile</h2></div>
+    
+<hr>
+<form action="" method="post">
+    <table>
+    
+        <tr>
+            <td id="td1"> 
+                <label for="First Name">First Name</label><br>
+                <input  name="fname" placeholder="First Name" class="R-Form">
+
+            </td>
+            <td id="td2">
+                <label for="Last Name">Last Name</label><br>
+                <input name="lname" type="text" placeholder="Last Name" class="R-Form">
+            </td>
+        </tr>
+        <tr>
+            <td id="td1">
+                <label for="Email">Email</label><br>
+                <input type="email" placeholder="Email" class="R-Form">
+            </td>
+            <td id="td2">
+                <label for="Phone">Phone</label><br>
+                <input name="phone" type="text" placeholder="Phone" class="R-Form">
+            </td>
+        </tr>
+        <tr>
+            <td id="td1">
+                <label for="CNIC">CNIC</label><br>
+                <input name="CNIC" type="text" placeholder="CNIC" class="R-Form">
+            </td>
+            <td id="td2">
+                <label for="Gender">Gender</label><br>
+                 <input name="gender" type="password" placeholder="Gender" class="R-Form">
+            </td>
+       
+   
+   
+    </table>
+    </form>
+
+</div>
+</div>
+<!--Footer-->
+<footer class="container-fluid bg-grey py-5">
+    <div class="container">
+       <div class="row">
+          <div class="col-md-6">
+             <div class="row">
+                <div class="col-md-6 ">
+                   <div class="logo-part">
+                      <img src="pics/logo_light.png" class="w-50 logo-footer" >
+                      <p>7637 Laurel Dr. King Of Prussia, PA 19406</p>
+                      <p>With the beginning of SAZ, we arrive at a new chapter in the golden history of SAZ Group Of Panjab. SAZ is not just a premium bus service; it is an inter-city transport experience that put its customers first. We aim to transform the travelling experience into a luxurious memory.</p>
+                   </div>
+                </div>
+                <div class="col-md-6 px-4">
+                   <h6> About Company</h6>
+                   <p>SAZ is not just a premium bus service; it is an inter-city transport experience that put its customers first.</p>
+                   <a id="Fa" href="index.html" class="btn-footer"> More Info </a><br>
+                   <a id="Fa" href="Contact_us.html" class="btn-footer"> Contact Us</a>
+                </div>
+             </div>
+          </div>
+          <div class="col-md-6">
+             <div class="row">
+                <div class="col-md-6 px-4">
+                   <h6> Help us</h6>
+                   <div class="row ">
+                      <div class="col-md-6">
+                         <ul>
+                            <li> <a class="Fa" href="index.html"> Home</a> </li>
+                            <li> <a class="Fa" href="About_us.html"> About</a> </li>
+                            <li> <a class="Fa" href="Travel_experience.html"> Travel Experience</a> </li>
+                            <li> <a class="Fa" href="Contact_us.html"> Contact us</a> </li>
+                            <li> <a class="Fa" href="Career.html"> CAREERS</a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 px-4">
+                       <ul>
+                          <li> <a class="Fa" href="#"> Cab Faciliy</a> </li>
+                          <li> <a class="Fa" href="#"> Fax</a> </li>
+                          <li> <a class="Fa" href="Career.html"> Terms</a> </li>
+                          <li> <a class="Fa" href="#"> Policy</a> </li>
+                          <li> <a class="Fa" href="#"> Refunds</a> </li>
+                          <li> <a class="Fa" href="https://www.jazzcash.com.pk/"> Jazz_cash</a> </li>
+                       </ul>
+                    </div>
+                 </div>
+              </div>
+              <div class="col-md-6 ">
+                 <h6> Newsletter</h6>
+                 <div class="social">
+                    <a class="Fa" href="https://web.facebook.com/?_rdc=1&_rdr"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a class="Fa" href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                 </div>
+                 <form class="form-footer my-3">
+                    <input type="text"  placeholder="search here...." name="search">
+                    <input type="button" value="Go" >
+                 </form>
+                 <p>That's service limitation of Search</p>
+              </div>
+           </div>
+        </div>
+    </div>
+</div>
+</div>
+</footer>
+<div style="background-color: rgb(70, 69, 69);width: 100%; color: rgb(184, 184, 184);">
+    <em style="margin-left: 3%;">© 2021 All Rights Reserved Terms of Use and Privacy Policy</em>
+    <em style="margin-left: 35%;">Powered By : SAZ Group Corporation</em>
+</div>
+
+    </body>
+</html>

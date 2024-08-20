@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Styling/load.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="css_files/Header_footer.css">
+   <style>
+	
+		#myTable 
+		{
+			border-collapse: collapse;
+			width: 100%;
+			border: 1px solid #ddd;
+			font-size: 18px;
+		}
+		#myTable th, #myTable td 
+		{
+	  		text-align: left;
+	  		padding: 12px;
+		}
+		#myTable tr 
+		{
+	  		border-bottom: 1px solid #ddd;
+		}
+		#myTable tr.header, #myTable tr:hover 
+		{
+	  		background-color: #f1f1f1;
+		}
+		.book_btn{
+                    width: 120%;
+                    height: 45px;
+                    background-color: red;
+                    color: white;
+                    font-size: 15px;
+                    outline: none;
+                }
+				#bid{
+					text-align: left;
+				}
+	</style>
+
+
+
+</head>
+<body onload="Load()" style="margin:0;">
+     <!--Header-->
+          <marquee>We are operationally ongoing. Taking every possible precaution is our top priority. So worry less and travel more with SAZ Transport Company!</marquee>
+
+          <div class="navbar">
+              <nav class="nav">
+                  <div class="innernavbar">
+                      <div class="img">
+                          <img src="pics/logo2-01.png" alt="logo" width="150%">
+                      </div>
+                          <div class="div_nav_txt" >
+                             
+                              <a  class="nav_txt" href="index.html">HOME</a>
+                              <a  class="nav_txt" href="About_us.html"> ABOUT </a>
+                              <a  class="nav_txt" href="Travel_experience.html"> TRAVEL EXPERIENCE </a>
+                              <a  class="nav_txt" href="Contact_us.html">  CONTACT US</a>
+                              <a  class="nav_txt" href="Career.html">CAREERS</a>
+                              <div class="dropdown">
+                                  <a  onclick="myFunction()" class="dropbtn">ACCOUNT</a>
+                                  <div id="myDropdown" class="dropdown-content">
+                                    <a href="login_page.html">SIGNIN</a>
+                                    <a href="Profile.html">Profile</a>
+                                    <a href="admin/admin_table.html">Admin</a>
+                                    <a href="logout.html" id="signout">SIGNOUT</a>
+                                  </div>
+                                </div>
+
+                                <script>
+                                /* When the user clicks on the button, 
+                                toggle between hiding and showing the dropdown content */
+                                function myFunction() {
+                                  document.getElementById("myDropdown").classList.toggle("show");
+                                }
+                                
+                                // Close the dropdown if the user clicks outside of it
+                                window.onclick = function(event) {
+                                  if (!event.target.matches('.dropbtn')) {
+                                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                                    var i;
+                                    for (i = 0; i < dropdowns.length; i++) {
+                                      var openDropdown = dropdowns[i];
+                                      if (openDropdown.classList.contains('show')) {
+                                        openDropdown.classList.remove('show');
+                                      }
+                                    }
+                                  }
+                                }
+                                </script>
+                          </div>
+                  </div>
+              </nav>
+             </div>
+          
+          
+	
+	
+	<!--page-->
+	        	<div class="container">
+	        		<h2>Enter City name to check its schedule:</h2>
+	        		<br>
+	        		<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for city schedule.." title="Type in a name" style="width: 50%">
+	        		<button onclick="Hide()">Check Schedule</button>		
+					<div style="display: none;" id="myDIV">
+						<br>
+	        			<br>
+	        			<table id="myTable">
+							<tr class="header">
+								<th style="width:35%;">Leaving From</th>
+								<th style="width:30.33%;">Going to</th>
+								<th style="width:30.33%;">Time</th>
+								<th style="width:50.33%; text-align: left;" id="bid" >Booking</th>
+							</tr>
+							<tr>
+								<td>ABBOTTABAD</td>
+								<td>RAWALPINDI</td>
+								<td>6:00 AM</td>
+								<td><a href="ticket_panal.html"><button class="book_btn" type="submit">BOOK NOW</button></a></td>
+							</tr>
+							<tr>
+								<td>ABBOTTABAD</td>
+								<td>LAHORE</td>
+								<td>7:00 AM</td>
+								<td><a href="ticket_panal.html"><button class="book_btn" type="submit">BOOK NOW</button></a></td>
+							</tr>
+							<tr>
+								<td>ABBOTTABAD</td>
+								<td>MULTAN</td>
+								<td>8:00 AM</td>
+								<td><a href="ticket_panal.html"><button class="book_btn" type="submit">BOOK NOW</button></a></td>
+							</tr>
+							<tr>
+								<td>ABBOTTABAD</td>
+								<td>FAISALABAD</td>
+								<td>9:00 AM</td>
+								<td><a href="ticket_panal.html"><button class="book_btn" type="submit">BOOK NOW</button></a></td>
+							</tr>
+							<tr>
+								<td>ABBOTTABAD</td>
+								<td>PESHAWAR</td>
+								<td>10:00 AM</td>
+								<td><a href="ticket_panal.html"><button class="book_btn" type="submit">BOOK NOW</button></a></td>
+							</tr>
+							<tr>
+								<td>ABBOTTABAD</td>
+								<td>KARACHI</td>
+								<td>11:00 AM</td>
+								<td><a href="ticket_panal.html"><button class="book_btn" type="submit">BOOK NOW</button></a></td>
+							</tr>
+							<tr>
+								<td>ABBOTTABAD</td>
+								<td>ISLAMABAD</td>
+								<td>12:00 PM</td>
+								<td><a href="ticket_panal.html"><button class="book_btn" type="submit">BOOK NOW</button></a></td>
+							</tr>
+							<tr>
+								<td>ABBOTTABAD</td>
+								<td>GUJRANWALA</td>
+								<td>1:00 PM</td>
+								<td><a href="ticket_panal.html"><button class="book_btn" type="submit">BOOK NOW</button></a></td>
+							<tr>
+								<td>ABBOTTABAD</td>
+								<td>QUETTA</td>
+								<td>2:00 PM</td>
+								<td><a href="ticket_panal.html"><button class="book_btn" type="submit">BOOK NOW</button></a></td>
+							</tr>
+							<tr>
+								<td>FAISALABAD</td>
+								<td>RAWALPINDI</td>
+								<td>6:00 AM</td>
+								<td><a href="ticket_panal.html"><button class="book_btn" type="submit">BOOK NOW</button></a></td>
+							</tr>
+							<tr>
+								<td>FAISALABAD</td>
+								<td>LAHORE</td>
+								<td>7:00 AM</td>
+								<td><a href="ticket_panal.html"><button class="book_btn" type="submit">BOOK NOW</button></a></td>
+							</tr>
+							<tr>
+								<td>FAISALABAD</td>
+								<td>MULTAN</td>
+								<td>8:00 AM</td>
+								<td><a href="ticket_panal.html"><button class="book_btn" type="submit">BOOK NOW</button></a></td>
+							</tr>
+							<tr>
+								<td>FAISALABAD</td>
+								<td>ABBOTTABAD</td>
+								<td>9:00 AM</td>
+								<td><a href="ticket_panal.html"><button class="book_btn" type="submit">BOOK NOW</button></a></td>
+							</tr>
+							<tr>
+								<td>FAISALABAD</td>
+								<td>PESHAWAR</td>
+								<td>10:00 AM</td>
+								<td><a href="ticket_panal.html"><button class="book_btn" type="submit">BOOK NOW</button></a></td>
+							</tr>
+							<tr>
+								<td>FAISALABAD</td>
+								<td>KARACHI</td>
+								<td>11:00 AM</td>
+								<td><a href="ticket_panal.html"><button class="book_btn" type="submit">BOOK NOW</button></a></td>
+							</tr>
+							<tr>
+								<td>FAISALABAD</td>
+								<td>ISLAMABAD</td>
+								<td>12:00 PM</td>
+								<td><a href="ticket_panal.html"><button class="book_btn" type="submit">BOOK NOW</button></a></td>
+							</tr>
+							<tr>
+								<td>FAISALABAD</td>
+								<td>GUJRANWALA</td>
+								<td>1:00 PM</td>
+								<td><a href="ticket_panal.html"><button class="book_btn" type="submit">BOOK NOW</button></a></td>
+							<tr>
+								<td>FAISALABAD</td>
+								<td>QUETTA</td>
+								<td>2:00 PM</td>
+								<td><a href="ticket_panal.html"><button class="book_btn" type="submit">BOOK NOW</button></a></td>
+							</tr>
+							
+
+						</table>
+						<script>
+							function myFunction() 
+							{
+								var input, filter, table, tr, td, i, txtValue;
+								input = document.getElementById("myInput");
+								filter = input.value.toUpperCase();
+								table = document.getElementById("myTable");
+								tr = table.getElementsByTagName("tr");
+								for (i = 0; i < tr.length; i++) 
+								{
+									td = tr[i].getElementsByTagName("td")[0];
+									if (td)
+									{
+										txtValue = td.textContent || td.innerText;
+										if (txtValue.toUpperCase().indexOf(filter) > -1) 
+										{
+											tr[i].style.display = "";
+										} 
+										else 
+										{
+											tr[i].style.display = "none";
+										}
+									}       
+								}
+							}
+						</script>			
+					</div>
+					<script>
+						function Hide() 
+						{
+	  						var x = document.getElementById("myDIV");
+						  	if (x.style.display === "none") 
+						  	{
+						    	x.style.display = "block";
+						  	} 
+						  	else 
+						  	{
+						    	x.style.display = "none";
+						  	}
+						}
+					</script>				
+				</div>
+				<br><br><br><br><br>
+			
+		
+        <!--footer-->
+        <footer class="container-fluid bg-grey py-5">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="row">
+                        <div class="col-md-6 ">
+                           <div class="logo-part">
+                              <img src="pics/logo_light.png" class="w-50 logo-footer" >
+                              <p>7637 Laurel Dr. King Of Prussia, PA 19406</p>
+                              <p>With the beginning of SAZ, we arrive at a new chapter in the golden history of SAZ Group Of Panjab. SAZ is not just a premium bus service; it is an inter-city transport experience that put its customers first. We aim to transform the travelling experience into a luxurious memory.</p>
+                           </div>
+                        </div>
+                        <div class="col-md-6 px-4">
+                           <h6> About Company</h6>
+                           <p>SAZ is not just a premium bus service; it is an inter-city transport experience that put its customers first.</p>
+                           <a id="Fa" href="index.html" class="btn-footer"> More Info </a><br>
+                           <a id="Fa" href="Contact_us.html" class="btn-footer"> Contact Us</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="row">
+                        <div class="col-md-6 px-4">
+                           <h6> Help us</h6>
+                           <div class="row ">
+                              <div class="col-md-6">
+                                 <ul>
+                                    <li> <a class="Fa" href="index.html"> Home</a> </li>
+                                    <li> <a class="Fa" href="About_us.html"> About</a> </li>
+                                    <li> <a class="Fa" href="Travel_experience.html"> Travel Experience</a> </li>
+                                    <li> <a class="Fa" href="Contact_us.html"> Contact us</a> </li>
+                                    <li> <a class="Fa" href="Career.html"> CAREERS</a> </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 px-4">
+                               <ul>
+                                  <li> <a class="Fa" href="#"> Cab Faciliy</a> </li>
+                                  <li> <a class="Fa" href="#"> Fax</a> </li>
+                                  <li> <a class="Fa" href="Career.html"> Terms</a> </li>
+                                  <li> <a class="Fa" href="#"> Policy</a> </li>
+                                  <li> <a class="Fa" href="#"> Refunds</a> </li>
+                                  <li> <a class="Fa" href="https://www.jazzcash.com.pk/"> Jazz_cash</a> </li>
+                               </ul>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="col-md-6 ">
+                         <h6> Newsletter</h6>
+                         <div class="social">
+                            <a class="Fa" href="https://web.facebook.com/?_rdc=1&_rdr"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a class="Fa" href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                         </div>
+                         <form class="form-footer my-3">
+                            <input type="text"  placeholder="search here...." name="search">
+                            <input type="button" value="Go" >
+                         </form>
+                         <p>That's service limitation of Search</p>
+                      </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </footer>
+        <div style="background-color: rgb(70, 69, 69);width: 100%; color: rgb(184, 184, 184);">
+            <em style="margin-left: 3%;">© 2021 All Rights Reserved Terms of Use and Privacy Policy</em>
+            <em style="margin-left: 35%;">Powered By : SAZ Group Corporation</em>
+        </div>
+
+</body>
+</html>
