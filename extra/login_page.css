@@ -1,0 +1,52 @@
+
+
+@media only screen and (min-width:600px){
+    button[type=submit]
+    {
+    background-color: rgb(13, 0, 199);
+    border: 1px solid rgb(13, 6, 141);
+        color: rgb(255, 255, 255);
+        width: 25%;
+        height: 35px;
+        font-size:18px;
+        font-family:Arial, Helvetica, sans-serif;
+        word-spacing: normal; 
+        border-radius: 5px;
+        margin-top: 4%;
+        margin-left: 36%;
+    }
+    button[type=submit]:focus{
+    box-shadow: 0px 0px 2.5px 2.5px #1b58b388;
+    }
+   
+    input[type=password],input[type=text]{
+    border: 1px solid rgb(8, 25, 156);
+        color: rgb(0, 0, 0);
+        width: 100%;
+        height: 50px;
+        font-size:18px;
+        font-family:Arial, Helvetica, sans-serif;
+        word-spacing: normal; 
+        margin-top: 10px;
+        margin-bottom: 25px;
+        border-radius: 5px;
+        outline: none;
+        background-color: white;
+    }
+    input[type=password]:focus , input[type=text]:focus {
+        box-shadow: 0px 0px 2.5px 2.5px #5879cc88;
+               }
+              
+               .p1{
+                   font-size: auto;
+                   color: rgb(0, 0, 0);
+               }
+               .main_div_login{
+                   width: 100%;
+               }
+            .form_div{
+                width: 50%;
+                margin-left:25%;
+                margin-right: 25%;
+            }
+}
