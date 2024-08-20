@@ -1,0 +1,417 @@
+
+<html>
+    <head>
+<title>Homepage</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="css_files/Header_footer.css">
+  <link rel="stylesheet" href="css_files/home__page.css">
+  <link rel="stylesheet" href="Travel_experience.css">
+  <script type="text/javascript" src="js_files/select.js"></script>
+<style>
+  * {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 5s;
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 1} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 1} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+</style>
+
+    </head>
+    
+    <body style="background-color: rgb(243, 243, 243);">
+<marquee>We are operationally ongoing. Taking every possible precaution is our top priority. So worry less and travel more with SAZ Transport Company!</marquee>
+
+<div class="navbar">
+    <nav class="nav">
+        <div class="innernavbar">
+            <div class="img">
+                <img src="pics/logo2-01.png" alt="logo" width="150%">
+            </div>
+                <div class="div_nav_txt">
+                   
+                    <a  class="nav_txt" href="index.html">HOME</a>
+                    <a  class="nav_txt" href="About_us.html"> ABOUT </a>
+                    <a  class="nav_txt" href="Travel_experience.html"> TRAVEL EXPERIENCE </a>
+                    <a  class="nav_txt" href="Contact_us.html">  CONTACT US</a>
+                    <a  class="nav_txt" href="Career.html">CAREERS</a>
+                    <div class="dropdown">
+                        <a  onclick="myFunction()" class="dropbtn">ACCOUNT</a>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="login_page.html">SIGNIN</a>
+                          <a href="Profile.html">Profile</a>
+                          <a href="login_page.html">SIGNOUT</a>
+                        </div>
+                      </div>
+                      
+                      <script>
+                      /* When the user clicks on the button, 
+                      toggle between hiding and showing the dropdown content */
+                      function myFunction() {
+                        document.getElementById("myDropdown").classList.toggle("show");
+                      }
+                      
+                      // Close the dropdown if the user clicks outside of it
+                      window.onclick = function(event) {
+                        if (!event.target.matches('.dropbtn')) {
+                          var dropdowns = document.getElementsByClassName("dropdown-content");
+                          var i;
+                          for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                              openDropdown.classList.remove('show');
+                            }
+                          }
+                        }
+                      }
+                      </script>
+					  
+                </div>
+        </div>
+    </nav>
+   </div>
+
+  
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="pics/slidepic6-01.jpg" style="width:100%">
+      <div class="text"></div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="pics/slidepic2-01.jpg" style="width:100%">
+      <div class="text"></div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="pics/slidepic5-01.jpg" style="width:100%">
+      <div class="text"></div>
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+    <script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+   
+    <div class="main_container" id="main_container">
+        <h2>Where Do You Want to Travel?</h2><br>
+   <div class="div_flex">
+       <div class="Departure_div">
+           <label>Traveling From</label><br>
+           <select id="country" required style="font-size: 20px ; background-color: #e6eeff" onchange="random_function()">
+           <option  class="option" >Departure</option>
+           <option  class="option" >Lahore</option>
+           <option  class="option" >Layyah</option>
+           <option  class="option" >Multan</option>
+          </select>
+       </div>
+       <div class="destination_div">
+        <label>Traveling To</label><br>
+        <select id="city" style="font-size: 20px;  background-color: #e6eeff" onchange="random_function1()">
+               <option class="option" >Choose destination</option>
+           </select>
+       </div>
+
+       <div class="date_div">
+        <label>Date</label><br>
+           <input type="date" class="option" style="background-color: #e6eeff">
+       </div>
+
+       <div class="type_div">
+        <label>Ticket Type</label><br>
+           <select style="background-color: #e6eeff">
+        <option class="option" id="option-6">Ticket Type</option>
+        <option class="option" id="option-6">One Way</option>
+       </select>
+       </div>
+
+       <div class="btn"><a href="search_bus.html">
+        <button type="submit" class="search_btn" style="color: white">Search</button></a>
+       </div>
+</div>
+   </div>
+
+
+<div style="margin-top: -2%; margin-bottom: 3%;" class="mid_txt">
+    <h1 style="padding-top: 5%; text-align: center; font:bold;">Why Choose Us?</h1>
+<p style="margin-left: 30%; margin-right: 30%; margin-top: 2%; text-align: center; font-size: 20px;">We all spend hours browsing different travel websites in search of the best flight and property deals for the “perfect holiday”. But, what if we were to tell you that there is a simpler solution? If you could find the best prices for your holiday all on one website, would you use it?</p>
+</div>
+
+<div>
+    <h1 style="padding-top: 0%; text-align: center; font:bold; margin-bottom: 3%; margin-top: 5%;">World Class Travel Experience</h1>
+</div>
+
+<div style="display: flex; justify-content: center;" class="mid_main">
+
+<div style="text-align: center;" class="img_div">
+<a href="Travel_experience.html #food"><img src="pics/food1.ico" alt="img" class="img_mid"></a>
+<a href="Travel_experience.html #food"><h2 class="img_txt">DELECTABLE SNACKS ONBOARD</h2></a>
+</div>
+
+<div style="text-align: center; " class="img_div">
+    <a href="Travel_experience.html #camera"><img src="pics/Camera-icon.png" alt="img" class="img_mid"></a>
+    <a href="Travel_experience.html #camera"><h2 class="img_txt">EAGLE EYE SURVELLANCE</h2></a>
+    </div>
+
+    <div style="text-align: center;" class="img_div">
+        <a href="Travel_experience.html #video"><img src="pics/Video-icon.png" alt="img" class="img_mid"></a>
+        <a href="Travel_experience.html #video"><h2 class="img_txt">ENTERTAINMENT SYSTEM</h2></a>
+        </div>
+
+        <div style="text-align: center;" class="img_div">
+            <a href="Travel_experience.html #time"><img src="pics/time-icon.png" alt="img" class="img_mid"></a>
+            <a href="Travel_experience.html #time"><h2 class="img_txt">ON TIME EVERY TIME</h2></a>
+            </div>
+
+            <div style="text-align: center;" class="img_div">
+                <a href="Travel_experience.html #air"><img src="pics/air-icon.png" alt="img" class="img_mid"></a>
+                <a href="Travel_experience.html #air"><h2 class="img_txt">AIR CONDITION SYSTEM</h2></a>
+                </div>
+
+                <div style="text-align: center;" class="img_div">
+                    <a href="Travel_experience.html #wifi"><img src="pics/wifi-icon2.png" alt="img" class="img_mid"></a>
+                    <a href="Travel_experience.html #wifi"><h2 class="img_txt">FREE WIFI</h2></a>
+                    </div>
+</div>
+
+
+<div>
+    <h1 style="padding-top: 0%; text-align: center; font:bold; margin-bottom: 3%; margin-top: 5%;">World Class Terminal Experience</h1>
+</div>
+
+<div style="display: flex; justify-content: center;" class="mid_main">
+
+<div style="text-align: center;" class="img_div">
+<a href="Travel_experience.html #online"><img src="pics/Online-icon.png" alt="img" class="img_mid"></a>
+<a href="Travel_experience.html #online"><h2 class="img_txt">HYBRID TICKETING SYSTEM</h2></a>
+</div>
+
+<div style="text-align: center;" class="img_div">
+    <a href="Travel_experience.html #kid"><img src="pics/collections-icon.png" alt="img" class="img_mid"></a>
+    <a href="Travel_experience.html #kid"><h2 class="img_txt">SAZ COLECTIONS</h2></a>
+    </div>
+
+    <div style="text-align: center;" class="img_div">
+        <a href="Travel_experience.html #kid"><img src="pics/kid-icon.png" alt="img" class="img_mid"></a>
+        <a href="Travel_experience.html #kid"><h2 class="img_txt">LITTLE SAZ KIDS CLUB</h2></a>
+        </div>
+
+      
+        <div style="text-align: center;" class="img_div">
+            <a href="Travel_experience.html #fashion"><img src="pics/fashion-icon.png" alt="img" class="img_mid"></a>
+            <a href="Travel_experience.html $fashion"><h2 class="img_txt">SAZ FASHION SHOP</h2></a>
+            </div>
+
+            <div style="text-align: center;" class="img_div">
+                <a href="Travel_experience.html #hair"><img src="pics/Hair-icon.png" alt="img" class="img_mid"></a>
+                <a href="Travel_experience.html #hair"><h2 class="img_txt">SAZ HAIR SALON</h2></a>
+                </div>
+
+                <div style="text-align: center;" class="img_div">
+                    <a href="Travel_experience.html #Support"><img src="pics/support-icon.png" alt="img" class="img_mid"></a>
+                    <a href="Travel_experience.html #Support"><h2 class="img_txt">24/7 CUSOMER SUPPORT</h2></a>
+                    </div>
+</div>
+
+<div style="margin-top: 5%;">
+    <img src="pics/mid_pic-01.jpg" alt="Img" style="width: 100%; opacity: 100%;">
+</div>
+
+
+<div class="end_main_container">
+<div class="end_tcy_img_div" style="border: 5px solid; border-color:  rgba(0, 0, 0, 0) rgb(0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);">
+    <img src="pics/terminals-icon.png" alt="img" class="tcy_img"><h1> 52</h1>
+</b><h1 style="font-size:15px;"><b>TERMINALS</b></h1>
+</div>
+<div class="end_tcy_img_div" style="border: 5px solid; border-color:  rgba(0, 0, 0, 0) rgb(0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);">
+    <img src="pics/citycover-icon.png" alt="img" class="tcy_img"><h1> 87</h1>
+    </b><h1 style="font-size:15px;"><b>CITIES COVERED</b></h1>
+</div>
+<div class="end_tcy_img_div">
+    <img src="pics/year_exp-icon.png" alt="img" class="tcy_img"><h1> 65</h1>
+</b><h1 style="font-size:15px;"><b>YEARS OF EXPERIENCE</b></h1>
+</div>
+</div>
+<div>
+   <a href="#main_container"><button type="button" class="find_bus_btn">Find Bus Ticket</button></a>
+</div>
+
+
+    
+    </body>
+
+   <!--Footer........................-->
+   <footer class="container-fluid bg-grey py-5">
+    <div class="container">
+       <div class="row">
+          <div class="col-md-6">
+             <div class="row">
+                <div class="col-md-6 ">
+                   <div class="logo-part">
+                      <img src="pics/logo_light.png" class="w-50 logo-footer" >
+                      <p>7637 Laurel Dr. King Of Prussia, PA 19406</p>
+                      <p>With the beginning of SAZ, we arrive at a new chapter in the golden history of SAZ Group Of Panjab. SAZ is not just a premium bus service; it is an inter-city transport experience that put its customers first. We aim to transform the travelling experience into a luxurious memory.</p>
+                   </div>
+                </div>
+                <div class="col-md-6 px-4">
+                   <h6> About Company</h6>
+                   <p>SAZ is not just a premium bus service; it is an inter-city transport experience that put its customers first.</p>
+                   <a id="Fa" href="home__page.html" class="btn-footer"> More Info </a><br>
+                   <a id="Fa" href="Contact_us.html" class="btn-footer"> Contact Us</a>
+                </div>
+             </div>
+          </div>
+          <div class="col-md-6">
+             <div class="row">
+                <div class="col-md-6 px-4">
+                   <h6> Help us</h6>
+                   <div class="row ">
+                      <div class="col-md-6">
+                         <ul>
+                            <li> <a class="Fa" href="home__page.html"> Home</a> </li>
+                            <li> <a class="Fa" href="About_us.html"> About</a> </li>
+                            <li> <a class="Fa" href="Travel_experience.html"> Travel Experience</a> </li>
+                            <li> <a class="Fa" href="Contact_us.html"> Contact us</a> </li>
+                            <li> <a class="Fa" href="Career.html"> CAREERS</a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 px-4">
+                       <ul>
+                          <li> <a class="Fa" href="#"> Cab Faciliy</a> </li>
+                          <li> <a class="Fa" href="#"> Fax</a> </li>
+                          <li> <a class="Fa" href="Career.html"> Terms</a> </li>
+                          <li> <a class="Fa" href="#"> Policy</a> </li>
+                          <li> <a class="Fa" href="#"> Refunds</a> </li>
+                          <li> <a class="Fa" href="https://www.jazzcash.com.pk/"> Jazz_cash</a> </li>
+                       </ul>
+                    </div>
+                 </div>
+              </div>
+              <div class="col-md-6 ">
+                 <h6> Newsletter</h6>
+                 <div class="social">
+                    <a class="Fa" href="https://web.facebook.com/?_rdc=1&_rdr"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a class="Fa" href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                 </div>
+                 <form class="form-footer my-3">
+                    <input type="text"  placeholder="search here...." name="search">
+                    <input type="button" value="Go" >
+                 </form>
+                 <p>That's service limitation of Search</p>
+              </div>
+           </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</footer>
+<div style="background-color: rgb(70, 69, 69);width: 100%; color: rgb(184, 184, 184);">
+    <em style="margin-left: 3%;">© 2021 All Rights Reserved Terms of Use and Privacy Policy</em>
+    <em style="margin-left: 25%;">Powered By : SAZ Group Corporation</em>
+</div>
+
+</html>
